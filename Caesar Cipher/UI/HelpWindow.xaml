@@ -1,0 +1,56 @@
+﻿<Window x:Class="Caesar_Cipher.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Caesar_Cipher"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="355" Width="715" MinHeight="355" MinWidth="720" WindowStyle="ToolWindow" Icon="/UI/1792193.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Справочная инфорация о кнопках:" FontWeight="DemiBold"/>
+        
+        <Button Grid.Row="1" Width="75" Content="Справка" HorizontalAlignment="Left" Margin="5,5,0,5"/>
+        <Label Grid.Row="1" Content="Открытые окна со справочной информацией" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Center"/>
+        
+        <Button Grid.Row="2" Width="75" Content="Сохранить" HorizontalAlignment="Left" Margin="5,5,0,5"/>
+        <Label Grid.Row="2" Content="Сохранить содержимое текстового поля в файл" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Center"/>
+        
+        <Button Grid.Row="3" Width="100" Content="Очистить поле" HorizontalAlignment="Left" Margin="5,5,0,5"/>
+        <Label Grid.Row="3" Content="Удалить содержимое текстового поля" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Center"/>
+        
+        <Button Grid.Row="4" Width="95" Content="Зашифровать" HorizontalAlignment="Left" Margin="5,5,0,5"/>
+        <Label Grid.Row="4" Content="Зашифровать текст, находящийся в поле Дешифрованный текст'" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Center"/>
+        
+        <Button Grid.Row="5" Width="95" Content="Дешифровать" HorizontalAlignment="Left" Margin="5,5,0,5"/>
+        <Label Grid.Row="5" Content="Расшифровать текст, находящийся в поле 'Зашифрованный текст'" HorizontalAlignment="Left" Margin="105,0,0,0" VerticalAlignment="Center"/>
+
+        <Label Grid.Row="6" Content="Справочная инфорация о текстовых полях:" FontWeight="DemiBold"/>
+
+        <Label Grid.Row="7" Content="В поле 'Дешифрованный текст' нужно ввести текст, который требуется зашифровать"/>
+        <Label Grid.Row="8" Content="В поле 'Зашифрованный текст' нужно ввести текст, который требуется расшифровать"/>
+        <Label Grid.Row="9" Content="В поле 'Введите ключ шифрования' нужно указать целочисленное значение числа сдвигов по алфавиту(ключ шифрования)"/>
+
+        <Button x:Name="CloseHelp" 
+                Content="Закрыть"
+                Grid.Row="10" 
+                Height="20" 
+                Width="75" HorizontalAlignment="Right" Margin="5,5,5,2" Click="CloseHelp_Click"/>
+
+
+
+    </Grid>
+</Window>
